@@ -1,0 +1,28 @@
+input[type="submit"] {
+height: 27px;
+line-height: 13px;
+padding: 6px 9px 6px 9px;
+border: 1px solid darken(#38b664, 10);
+border-radius: 4px;
+font-weight: bold;
+background-color: #38b664;
+color: white;
+-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px;
+box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+font-size: 13px;
+cursor: pointer;
+    &:hover {
+    background-color: darken(#38b664, 10);
+    }
+}
+
+.datepicker, .postfix {
+cursor: pointer;
+margin-bottom: 20px;
+}
+
+textarea {
+min-height: 150px;
+}

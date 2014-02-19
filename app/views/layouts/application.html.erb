@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "AccountHero" %></title>
+
+    <%= stylesheet_link_tag    "application", 'http://fonts.googleapis.com/css?family=Istok+Web' %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+    <%= csrf_meta_tags %>
+    
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+    
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <%= render 'layouts/header' %>
+    <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
